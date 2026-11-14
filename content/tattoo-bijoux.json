@@ -1,6 +1,11 @@
 {
- "lobe": [],
- "nombril": [],
- "labret": [],
- "visage": []
+  "lobe": [
+    {
+      "nom": "strass titane doree",
+      "prix": "35€"
+    }
+  ],
+  "nombril": [],
+  "labret": [],
+  "visage": []
 }
