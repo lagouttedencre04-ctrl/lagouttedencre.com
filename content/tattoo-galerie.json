@@ -55,7 +55,11 @@
     "couverture": "/uploads/img_8675.jpg",
     "titre": "Floral",
     "sous_titre": "",
-    "pieces": []
+    "pieces": [
+      {
+        "media": "/uploads/img_8675.jpg"
+      }
+    ]
   },
   "mer": {
     "couverture": "",
