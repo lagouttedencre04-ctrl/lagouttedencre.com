@@ -30,3 +30,9 @@ var ready=new Promise(function(r){document.readyState==='loading'?document.addEv
 var data=Promise.all([get('content/'+page+'-textes.json'),get('content/'+page+'-medias.json'),page==='tattoo'?get('content/tattoo-galerie.json'):null,page==='tattoo'?get('content/tattoo-bijoux.json'):null]).then(function(a){return{textes:a[0],medias:a[1],galerie:a[2],bijoux:a[3]}});
 window.cmsReady=Promise.all([data,ready]).then(function(a){try{apply(a[0])}catch(e){console.warn('cms',e)}return a[0]});
 })();
+/* Masquer les textes vides "à ajouter depuis l'Espace pro" et verrouiller les emplacements */
+(function() {
+  var st = document.createElement('style');
+  st.textContent = '.offer-video-empty, .hero-video-empty, .placeholder-label { display: none !important; } image-slot { pointer-events: none !important; cursor: default !important; }';
+  document.head.appendChild(st);
+})();
