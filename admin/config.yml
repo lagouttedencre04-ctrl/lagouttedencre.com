@@ -286,92 +286,586 @@
     },
     {
      "name": "galerie",
-     "label": "Tattoo — Galerie",
+     "label": "Tattoo — Portfolio « Pièces récentes »",
      "file": "content/tattoo-galerie.json",
      "fields": [
       {
-       "label": "Photos et vidéos de la galerie",
-       "name": "items",
-       "widget": "list",
-       "summary": "{{fields.label}} — {{fields.cat}}",
+       "label": "Fine line",
+       "name": "fineline",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "summary": "Fine line",
        "fields": [
         {
-         "label": "Catégorie",
-         "name": "cat",
-         "widget": "select",
-         "options": [
-          {
-           "label": "Fine line",
-           "value": "fineline"
-          },
-          {
-           "label": "Réalisme",
-           "value": "blackwork"
-          },
-          {
-           "label": "Floral",
-           "value": "floral"
-          },
-          {
-           "label": "Lettrage",
-           "value": "lettrage"
-          },
-          {
-           "label": "Animé",
-           "value": "anime"
-          },
-          {
-           "label": "Mer",
-           "value": "mer"
-          },
-          {
-           "label": "Animaux",
-           "value": "animaux"
-          },
-          {
-           "label": "Géométrique",
-           "value": "geometrique"
-          },
-          {
-           "label": "Autre",
-           "value": "autre"
-          },
-          {
-           "label": "Piercing",
-           "value": "piercing"
-          }
-         ]
+         "label": "Image principale (onglet « Tout »)",
+         "name": "couverture",
+         "widget": "file",
+         "required": false,
+         "hint": "Photo ou vidéo mp4 affichée dans « Tout » et en premier dans l'onglet Fine line"
         },
         {
          "label": "Titre",
-         "name": "label",
-         "widget": "string"
-        },
-        {
-         "label": "Sous-titre",
-         "name": "meta",
+         "name": "titre",
          "widget": "string",
          "required": false
         },
         {
-         "label": "Grand format (vertical)",
-         "name": "grand",
-         "widget": "boolean",
-         "default": false,
+         "label": "Sous-titre",
+         "name": "sous_titre",
+         "widget": "string",
          "required": false
         },
         {
-         "label": "Photo",
-         "name": "photo",
-         "widget": "image",
-         "required": false
-        },
+         "label": "Photos et vidéos de l'onglet Fine line",
+         "name": "pieces",
+         "widget": "list",
+         "required": false,
+         "label_singular": "pièce",
+         "summary": "{{fields.titre}}",
+         "hint": "Cliquez « Ajouter pièce » pour chaque photo ou vidéo. Elles s'affichent quand on clique sur « Fine line ».",
+         "fields": [
+          {
+           "label": "Photo ou vidéo",
+           "name": "media",
+           "widget": "file",
+           "required": false
+          },
+          {
+           "label": "Titre",
+           "name": "titre",
+           "widget": "string",
+           "required": false
+          },
+          {
+           "label": "Sous-titre",
+           "name": "sous_titre",
+           "widget": "string",
+           "required": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "label": "Réalisme",
+       "name": "blackwork",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "summary": "Réalisme",
+       "fields": [
         {
-         "label": "Vidéo (remplace la photo)",
-         "name": "video",
+         "label": "Image principale (onglet « Tout »)",
+         "name": "couverture",
          "widget": "file",
          "required": false,
-         "hint": "mp4 court, sans son"
+         "hint": "Photo ou vidéo mp4 affichée dans « Tout » et en premier dans l'onglet Réalisme"
+        },
+        {
+         "label": "Titre",
+         "name": "titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Sous-titre",
+         "name": "sous_titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Photos et vidéos de l'onglet Réalisme",
+         "name": "pieces",
+         "widget": "list",
+         "required": false,
+         "label_singular": "pièce",
+         "summary": "{{fields.titre}}",
+         "hint": "Cliquez « Ajouter pièce » pour chaque photo ou vidéo. Elles s'affichent quand on clique sur « Réalisme ».",
+         "fields": [
+          {
+           "label": "Photo ou vidéo",
+           "name": "media",
+           "widget": "file",
+           "required": false
+          },
+          {
+           "label": "Titre",
+           "name": "titre",
+           "widget": "string",
+           "required": false
+          },
+          {
+           "label": "Sous-titre",
+           "name": "sous_titre",
+           "widget": "string",
+           "required": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "label": "Floral",
+       "name": "floral",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "summary": "Floral",
+       "fields": [
+        {
+         "label": "Image principale (onglet « Tout »)",
+         "name": "couverture",
+         "widget": "file",
+         "required": false,
+         "hint": "Photo ou vidéo mp4 affichée dans « Tout » et en premier dans l'onglet Floral"
+        },
+        {
+         "label": "Titre",
+         "name": "titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Sous-titre",
+         "name": "sous_titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Photos et vidéos de l'onglet Floral",
+         "name": "pieces",
+         "widget": "list",
+         "required": false,
+         "label_singular": "pièce",
+         "summary": "{{fields.titre}}",
+         "hint": "Cliquez « Ajouter pièce » pour chaque photo ou vidéo. Elles s'affichent quand on clique sur « Floral ».",
+         "fields": [
+          {
+           "label": "Photo ou vidéo",
+           "name": "media",
+           "widget": "file",
+           "required": false
+          },
+          {
+           "label": "Titre",
+           "name": "titre",
+           "widget": "string",
+           "required": false
+          },
+          {
+           "label": "Sous-titre",
+           "name": "sous_titre",
+           "widget": "string",
+           "required": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "label": "Lettrage",
+       "name": "lettrage",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "summary": "Lettrage",
+       "fields": [
+        {
+         "label": "Image principale (onglet « Tout »)",
+         "name": "couverture",
+         "widget": "file",
+         "required": false,
+         "hint": "Photo ou vidéo mp4 affichée dans « Tout » et en premier dans l'onglet Lettrage"
+        },
+        {
+         "label": "Titre",
+         "name": "titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Sous-titre",
+         "name": "sous_titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Photos et vidéos de l'onglet Lettrage",
+         "name": "pieces",
+         "widget": "list",
+         "required": false,
+         "label_singular": "pièce",
+         "summary": "{{fields.titre}}",
+         "hint": "Cliquez « Ajouter pièce » pour chaque photo ou vidéo. Elles s'affichent quand on clique sur « Lettrage ».",
+         "fields": [
+          {
+           "label": "Photo ou vidéo",
+           "name": "media",
+           "widget": "file",
+           "required": false
+          },
+          {
+           "label": "Titre",
+           "name": "titre",
+           "widget": "string",
+           "required": false
+          },
+          {
+           "label": "Sous-titre",
+           "name": "sous_titre",
+           "widget": "string",
+           "required": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "label": "Animé",
+       "name": "anime",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "summary": "Animé",
+       "fields": [
+        {
+         "label": "Image principale (onglet « Tout »)",
+         "name": "couverture",
+         "widget": "file",
+         "required": false,
+         "hint": "Photo ou vidéo mp4 affichée dans « Tout » et en premier dans l'onglet Animé"
+        },
+        {
+         "label": "Titre",
+         "name": "titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Sous-titre",
+         "name": "sous_titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Photos et vidéos de l'onglet Animé",
+         "name": "pieces",
+         "widget": "list",
+         "required": false,
+         "label_singular": "pièce",
+         "summary": "{{fields.titre}}",
+         "hint": "Cliquez « Ajouter pièce » pour chaque photo ou vidéo. Elles s'affichent quand on clique sur « Animé ».",
+         "fields": [
+          {
+           "label": "Photo ou vidéo",
+           "name": "media",
+           "widget": "file",
+           "required": false
+          },
+          {
+           "label": "Titre",
+           "name": "titre",
+           "widget": "string",
+           "required": false
+          },
+          {
+           "label": "Sous-titre",
+           "name": "sous_titre",
+           "widget": "string",
+           "required": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "label": "Mer",
+       "name": "mer",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "summary": "Mer",
+       "fields": [
+        {
+         "label": "Image principale (onglet « Tout »)",
+         "name": "couverture",
+         "widget": "file",
+         "required": false,
+         "hint": "Photo ou vidéo mp4 affichée dans « Tout » et en premier dans l'onglet Mer"
+        },
+        {
+         "label": "Titre",
+         "name": "titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Sous-titre",
+         "name": "sous_titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Photos et vidéos de l'onglet Mer",
+         "name": "pieces",
+         "widget": "list",
+         "required": false,
+         "label_singular": "pièce",
+         "summary": "{{fields.titre}}",
+         "hint": "Cliquez « Ajouter pièce » pour chaque photo ou vidéo. Elles s'affichent quand on clique sur « Mer ».",
+         "fields": [
+          {
+           "label": "Photo ou vidéo",
+           "name": "media",
+           "widget": "file",
+           "required": false
+          },
+          {
+           "label": "Titre",
+           "name": "titre",
+           "widget": "string",
+           "required": false
+          },
+          {
+           "label": "Sous-titre",
+           "name": "sous_titre",
+           "widget": "string",
+           "required": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "label": "Animaux",
+       "name": "animaux",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "summary": "Animaux",
+       "fields": [
+        {
+         "label": "Image principale (onglet « Tout »)",
+         "name": "couverture",
+         "widget": "file",
+         "required": false,
+         "hint": "Photo ou vidéo mp4 affichée dans « Tout » et en premier dans l'onglet Animaux"
+        },
+        {
+         "label": "Titre",
+         "name": "titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Sous-titre",
+         "name": "sous_titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Photos et vidéos de l'onglet Animaux",
+         "name": "pieces",
+         "widget": "list",
+         "required": false,
+         "label_singular": "pièce",
+         "summary": "{{fields.titre}}",
+         "hint": "Cliquez « Ajouter pièce » pour chaque photo ou vidéo. Elles s'affichent quand on clique sur « Animaux ».",
+         "fields": [
+          {
+           "label": "Photo ou vidéo",
+           "name": "media",
+           "widget": "file",
+           "required": false
+          },
+          {
+           "label": "Titre",
+           "name": "titre",
+           "widget": "string",
+           "required": false
+          },
+          {
+           "label": "Sous-titre",
+           "name": "sous_titre",
+           "widget": "string",
+           "required": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "label": "Géométrique",
+       "name": "geometrique",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "summary": "Géométrique",
+       "fields": [
+        {
+         "label": "Image principale (onglet « Tout »)",
+         "name": "couverture",
+         "widget": "file",
+         "required": false,
+         "hint": "Photo ou vidéo mp4 affichée dans « Tout » et en premier dans l'onglet Géométrique"
+        },
+        {
+         "label": "Titre",
+         "name": "titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Sous-titre",
+         "name": "sous_titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Photos et vidéos de l'onglet Géométrique",
+         "name": "pieces",
+         "widget": "list",
+         "required": false,
+         "label_singular": "pièce",
+         "summary": "{{fields.titre}}",
+         "hint": "Cliquez « Ajouter pièce » pour chaque photo ou vidéo. Elles s'affichent quand on clique sur « Géométrique ».",
+         "fields": [
+          {
+           "label": "Photo ou vidéo",
+           "name": "media",
+           "widget": "file",
+           "required": false
+          },
+          {
+           "label": "Titre",
+           "name": "titre",
+           "widget": "string",
+           "required": false
+          },
+          {
+           "label": "Sous-titre",
+           "name": "sous_titre",
+           "widget": "string",
+           "required": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "label": "Autre",
+       "name": "autre",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "summary": "Autre",
+       "fields": [
+        {
+         "label": "Image principale (onglet « Tout »)",
+         "name": "couverture",
+         "widget": "file",
+         "required": false,
+         "hint": "Photo ou vidéo mp4 affichée dans « Tout » et en premier dans l'onglet Autre"
+        },
+        {
+         "label": "Titre",
+         "name": "titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Sous-titre",
+         "name": "sous_titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Photos et vidéos de l'onglet Autre",
+         "name": "pieces",
+         "widget": "list",
+         "required": false,
+         "label_singular": "pièce",
+         "summary": "{{fields.titre}}",
+         "hint": "Cliquez « Ajouter pièce » pour chaque photo ou vidéo. Elles s'affichent quand on clique sur « Autre ».",
+         "fields": [
+          {
+           "label": "Photo ou vidéo",
+           "name": "media",
+           "widget": "file",
+           "required": false
+          },
+          {
+           "label": "Titre",
+           "name": "titre",
+           "widget": "string",
+           "required": false
+          },
+          {
+           "label": "Sous-titre",
+           "name": "sous_titre",
+           "widget": "string",
+           "required": false
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "label": "Piercing",
+       "name": "piercing",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "summary": "Piercing",
+       "fields": [
+        {
+         "label": "Image principale (onglet « Tout »)",
+         "name": "couverture",
+         "widget": "file",
+         "required": false,
+         "hint": "Photo ou vidéo mp4 affichée dans « Tout » et en premier dans l'onglet Piercing"
+        },
+        {
+         "label": "Titre",
+         "name": "titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Sous-titre",
+         "name": "sous_titre",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Photos et vidéos de l'onglet Piercing",
+         "name": "pieces",
+         "widget": "list",
+         "required": false,
+         "label_singular": "pièce",
+         "summary": "{{fields.titre}}",
+         "hint": "Cliquez « Ajouter pièce » pour chaque photo ou vidéo. Elles s'affichent quand on clique sur « Piercing ».",
+         "fields": [
+          {
+           "label": "Photo ou vidéo",
+           "name": "media",
+           "widget": "file",
+           "required": false
+          },
+          {
+           "label": "Titre",
+           "name": "titre",
+           "widget": "string",
+           "required": false
+          },
+          {
+           "label": "Sous-titre",
+           "name": "sous_titre",
+           "widget": "string",
+           "required": false
+          }
+         ]
         }
        ]
       }
