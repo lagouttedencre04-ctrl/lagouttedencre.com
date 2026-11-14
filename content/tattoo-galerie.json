@@ -34,14 +34,14 @@
     ]
   },
   "autre": {
-    "couverture": "",
+    "couverture": "/uploads/img_8674.jpg",
     "titre": "Autre",
     "sous_titre": "",
     "pieces": []
   },
   "animaux": {
-    "couverture": "",
-    "titre": "Animaux",
+    "couverture": "/uploads/img_8673.jpg",
+    "titre": "Petits Tattoo",
     "sous_titre": "",
     "pieces": []
   },
@@ -52,7 +52,7 @@
     "pieces": []
   },
   "floral": {
-    "couverture": "",
+    "couverture": "/uploads/img_8675.jpg",
     "titre": "Floral",
     "sous_titre": "",
     "pieces": []
