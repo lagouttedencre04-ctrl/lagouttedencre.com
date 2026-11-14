@@ -1374,7 +1374,7 @@
 
 <script>
   // Gallery data
-  const galleryItems = [
+  const galleryItems = window.galleryItems = [
     { cat: 'blackwork', label: 'Réalisme', meta: 'Portrait · ombrage' },
     { cat: 'animaux', label: 'Animaux exotiques', meta: 'Faune · illustratif', size: 'tall' },
     { cat: 'piercing', label: 'Daith + helix', meta: 'Oreille gauche · titane' },
@@ -1427,7 +1427,10 @@
     });
   }
 
-  (window.cmsReady||Promise.resolve()).then(function(d){var g=d&&d.galerie&&d.galerie.items;if(g&&g.length){galleryItems.length=0;g.forEach(function(it){galleryItems.push({cat:it.cat,label:it.label,meta:it.meta||'',size:it.grand?'tall':undefined,src:it.photo||undefined,video:it.video||undefined})});Object.keys(catNames).forEach(function(c){var n=galleryItems.filter(function(i){return i.cat===c}).length;while(n<8){n++;galleryItems.push({cat:c,label:catNames[c]+' '+String(n).padStart(2,'0'),meta:catNames[c]})}})}renderGallery()});
+  (window.cmsReady||Promise.resolve()).then(function(d){var G=d&&d.galerie;if(G){var isV=function(s){return /\.(mp4|mov|webm|m4v)(\?|$)/i.test(s||'')};var out=[];var add=function(cat,m,label,meta){if(!m)return;out.push({cat:cat,label:label||catNames[cat],meta:meta||catNames[cat],src:isV(m)?undefined:m,video:isV(m)?m:undefined})};
+Object.keys(catNames).forEach(function(c){var o=G[c];if(!o)return;add(c,o.couverture,o.titre,o.sous_titre);(o.pieces||[]).forEach(function(p){if(p)add(c,p.media,p.titre,p.sous_titre)})});
+(G.items||[]).forEach(function(it){if(it&&it.cat)add(it.cat,it.video||it.photo,it.label,it.meta)});
+if(out.length){var keep=galleryItems.filter(function(i){return !out.some(function(o){return o.cat===i.cat})});galleryItems.length=0;out.concat(keep).forEach(function(i){galleryItems.push(i)})}}renderGallery()});
 
   document.getElementById('galFilter').addEventListener('click', (e) => {
     if (e.target.tagName !== 'BUTTON') return;
