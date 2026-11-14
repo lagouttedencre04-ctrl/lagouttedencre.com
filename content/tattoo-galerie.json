@@ -1,164 +1,164 @@
 {
- "items": [
-  {
-   "cat": "blackwork",
-   "label": "Réalisme",
-   "meta": "Portrait · ombrage",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "animaux",
-   "label": "Animaux exotiques",
-   "meta": "Faune · illustratif",
-   "grand": true,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "piercing",
-   "label": "Daith + helix",
-   "meta": "Oreille gauche · titane",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "floral",
-   "label": "Fleurs",
-   "meta": "Botanique · floral",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "autre",
-   "label": "Paysage",
-   "meta": "Nature · illustratif",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "lettrage",
-   "label": "Écriture chicano",
-   "meta": "Lettrage · chicano",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "fineline",
-   "label": "Fine line",
-   "meta": "Trait fin · minimal",
-   "grand": true,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "mer",
-   "label": "Mer",
-   "meta": "Océan · illustratif",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "piercing",
-   "label": "Conch posé",
-   "meta": "Titane F-136",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "anime",
-   "label": "Animé",
-   "meta": "Manga · couleur",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "geometrique",
-   "label": "Mandala",
-   "meta": "Ornemental · dotwork",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "geometrique",
-   "label": "Géométrique",
-   "meta": "Lignes · symétrie",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "autre",
-   "label": "Tattoo en commun",
-   "meta": "Duo · symbole partagé",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "blackwork",
-   "label": "Bras complet",
-   "meta": "Manchette · 3 séances",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "blackwork",
-   "label": "Dos complet",
-   "meta": "Pièce maîtresse · plusieurs séances",
-   "grand": true,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "piercing",
-   "label": "Lobe",
-   "meta": "Piercing oreille",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "piercing",
-   "label": "Septum",
-   "meta": "Piercing visage",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "piercing",
-   "label": "Nez",
-   "meta": "Piercing visage",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "piercing",
-   "label": "Nombril",
-   "meta": "Piercing corps",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  },
-  {
-   "cat": "piercing",
-   "label": "Labret",
-   "meta": "Piercing visage",
-   "grand": false,
-   "photo": "",
-   "video": ""
-  }
- ]
+  "items": [
+    {
+      "cat": "blackwork",
+      "label": "Réalisme",
+      "meta": "Portrait · ombrage",
+      "grand": false,
+      "photo": "/uploads/img_8674.png",
+      "video": ""
+    },
+    {
+      "cat": "animaux",
+      "label": "Animaux exotiques",
+      "meta": "Faune · illustratif",
+      "grand": true,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "piercing",
+      "label": "Daith + helix",
+      "meta": "Oreille gauche · titane",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "floral",
+      "label": "Fleurs",
+      "meta": "Botanique · floral",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "autre",
+      "label": "Paysage",
+      "meta": "Nature · illustratif",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "lettrage",
+      "label": "Écriture chicano",
+      "meta": "Lettrage · chicano",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "fineline",
+      "label": "Fine line",
+      "meta": "Trait fin · minimal",
+      "grand": true,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "mer",
+      "label": "Mer",
+      "meta": "Océan · illustratif",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "piercing",
+      "label": "Conch posé",
+      "meta": "Titane F-136",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "anime",
+      "label": "Animé",
+      "meta": "Manga · couleur",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "geometrique",
+      "label": "Mandala",
+      "meta": "Ornemental · dotwork",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "geometrique",
+      "label": "Géométrique",
+      "meta": "Lignes · symétrie",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "autre",
+      "label": "Tattoo en commun",
+      "meta": "Duo · symbole partagé",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "blackwork",
+      "label": "Bras complet",
+      "meta": "Manchette · 3 séances",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "blackwork",
+      "label": "Dos complet",
+      "meta": "Pièce maîtresse · plusieurs séances",
+      "grand": true,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "piercing",
+      "label": "Lobe",
+      "meta": "Piercing oreille",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "piercing",
+      "label": "Septum",
+      "meta": "Piercing visage",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "piercing",
+      "label": "Nez",
+      "meta": "Piercing visage",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "piercing",
+      "label": "Nombril",
+      "meta": "Piercing corps",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    },
+    {
+      "cat": "piercing",
+      "label": "Labret",
+      "meta": "Piercing visage",
+      "grand": false,
+      "photo": "",
+      "video": ""
+    }
+  ]
 }
