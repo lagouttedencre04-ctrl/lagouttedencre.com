@@ -61,7 +61,11 @@
     "couverture": "",
     "titre": "Mer",
     "sous_titre": "",
-    "pieces": []
+    "pieces": [
+      {
+        "media": "/uploads/img_8693.jpg"
+      }
+    ]
   },
   "geometrique": {
     "couverture": "",
