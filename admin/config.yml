@@ -1,0 +1,3341 @@
+# Configuration Decap CMS — La Goutte d'Encre (JSON valide = YAML valide)
+{
+ "backend": {
+  "name": "git-gateway",
+  "branch": "main"
+ },
+ "site_url": "https://lagouttedencre.com",
+ "display_url": "https://lagouttedencre.com",
+ "locale": "fr",
+ "media_folder": "uploads",
+ "public_folder": "/uploads",
+ "collections": [
+  {
+   "name": "accueil",
+   "label": "Accueil",
+   "files": [
+    {
+     "name": "medias",
+     "label": "Accueil — Logos",
+     "file": "content/accueil-medias.json",
+     "fields": [
+      {
+       "label": "Logo Tattoo (goutte)",
+       "name": "logo-tattoo",
+       "widget": "image",
+       "required": false,
+       "hint": "PNG à fond transparent — la couleur reste celle du site"
+      },
+      {
+       "label": "Logo Visuals (caméra)",
+       "name": "logo-visuals",
+       "widget": "image",
+       "required": false,
+       "hint": "PNG à fond transparent — la couleur reste celle du site"
+      }
+     ]
+    },
+    {
+     "name": "textes",
+     "label": "Accueil — Textes",
+     "file": "content/accueil-textes.json",
+     "fields": [
+      {
+       "label": "Landing",
+       "name": "g01",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · la main, l'aiguille, la peau",
+         "name": "ac001",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Tattoo & Piercing",
+         "name": "ac002",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Salon de tatouage et piercing à Goyave. Fine line, réalisme, chicano,…",
+         "name": "ac003",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · capturer ce qui ne se rejoue pas",
+         "name": "ac004",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Visuals",
+         "name": "ac005",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Photographe & vidéaste en Guadeloupe. Mariages, événements, immobilie…",
+         "name": "ac006",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · Maison · Goyave",
+         "name": "ac007",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · La Goutte d'Encre",
+         "name": "ac008",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · deux mains, une maison",
+         "name": "ac009",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · — tattoo & visuals —",
+         "name": "ac010",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Bas de page",
+       "name": "g02",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · Goyave · Guadeloupe",
+         "name": "ac011",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Est. 2024",
+         "name": "ac012",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Sur rendez-vous",
+         "name": "ac013",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "tattoo",
+   "label": "Tattoo & Piercing",
+   "files": [
+    {
+     "name": "medias",
+     "label": "Tattoo — Photos & vidéos",
+     "file": "content/tattoo-medias.json",
+     "fields": [
+      {
+       "label": "Photo ou vidéo du salon",
+       "name": "hero-salon",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "l'équipe en séance",
+       "name": "atelier-duo",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "crèmes & kits de soins",
+       "name": "soins-kit",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux lobe — photo 1",
+       "name": "bijou-lobe",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux lobe — photo 2",
+       "name": "bijou-lobe-2",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux lobe — photo 3",
+       "name": "bijou-lobe-3",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux lobe — photo 4",
+       "name": "bijou-lobe-4",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux nombril — photo 1",
+       "name": "bijou-nombril",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux nombril — photo 2",
+       "name": "bijou-nombril-2",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux nombril — photo 3",
+       "name": "bijou-nombril-3",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux nombril — photo 4",
+       "name": "bijou-nombril-4",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux labret — photo 1",
+       "name": "bijou-labret",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux labret — photo 2",
+       "name": "bijou-labret-2",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux labret — photo 3",
+       "name": "bijou-labret-3",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux labret — photo 4",
+       "name": "bijou-labret-4",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux visage — photo 1",
+       "name": "bijou-visage",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux visage — photo 2",
+       "name": "bijou-visage-2",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux visage — photo 3",
+       "name": "bijou-visage-3",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      },
+      {
+       "label": "Bijoux visage — photo 4",
+       "name": "bijou-visage-4",
+       "widget": "file",
+       "required": false,
+       "hint": "Photo ou vidéo (mp4)"
+      }
+     ]
+    },
+    {
+     "name": "galerie",
+     "label": "Tattoo — Galerie",
+     "file": "content/tattoo-galerie.json",
+     "fields": [
+      {
+       "label": "Photos et vidéos de la galerie",
+       "name": "items",
+       "widget": "list",
+       "summary": "{{fields.label}} — {{fields.cat}}",
+       "fields": [
+        {
+         "label": "Catégorie",
+         "name": "cat",
+         "widget": "select",
+         "options": [
+          {
+           "label": "Fine line",
+           "value": "fineline"
+          },
+          {
+           "label": "Réalisme",
+           "value": "blackwork"
+          },
+          {
+           "label": "Floral",
+           "value": "floral"
+          },
+          {
+           "label": "Lettrage",
+           "value": "lettrage"
+          },
+          {
+           "label": "Animé",
+           "value": "anime"
+          },
+          {
+           "label": "Mer",
+           "value": "mer"
+          },
+          {
+           "label": "Animaux",
+           "value": "animaux"
+          },
+          {
+           "label": "Géométrique",
+           "value": "geometrique"
+          },
+          {
+           "label": "Autre",
+           "value": "autre"
+          },
+          {
+           "label": "Piercing",
+           "value": "piercing"
+          }
+         ]
+        },
+        {
+         "label": "Titre",
+         "name": "label",
+         "widget": "string"
+        },
+        {
+         "label": "Sous-titre",
+         "name": "meta",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Grand format (vertical)",
+         "name": "grand",
+         "widget": "boolean",
+         "default": false,
+         "required": false
+        },
+        {
+         "label": "Photo",
+         "name": "photo",
+         "widget": "image",
+         "required": false
+        },
+        {
+         "label": "Vidéo (remplace la photo)",
+         "name": "video",
+         "widget": "file",
+         "required": false,
+         "hint": "mp4 court, sans son"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "bijoux",
+     "label": "Tattoo — Bijoux en vente (tarifs)",
+     "file": "content/tattoo-bijoux.json",
+     "fields": [
+      {
+       "label": "Bijoux oreille",
+       "name": "lobe",
+       "widget": "list",
+       "required": false,
+       "summary": "{{fields.nom}} — {{fields.prix}}",
+       "hint": "Ajoutez un bijou avec son prix. Liste vide = rien n'est affiché.",
+       "fields": [
+        {
+         "label": "Nom du bijou",
+         "name": "nom",
+         "widget": "string"
+        },
+        {
+         "label": "Prix",
+         "name": "prix",
+         "widget": "string",
+         "required": false,
+         "hint": "ex. 15€ ou « dès 12€ »"
+        }
+       ]
+      },
+      {
+       "label": "Bijoux nombril",
+       "name": "nombril",
+       "widget": "list",
+       "required": false,
+       "summary": "{{fields.nom}} — {{fields.prix}}",
+       "hint": "Ajoutez un bijou avec son prix. Liste vide = rien n'est affiché.",
+       "fields": [
+        {
+         "label": "Nom du bijou",
+         "name": "nom",
+         "widget": "string"
+        },
+        {
+         "label": "Prix",
+         "name": "prix",
+         "widget": "string",
+         "required": false,
+         "hint": "ex. 15€ ou « dès 12€ »"
+        }
+       ]
+      },
+      {
+       "label": "Labret",
+       "name": "labret",
+       "widget": "list",
+       "required": false,
+       "summary": "{{fields.nom}} — {{fields.prix}}",
+       "hint": "Ajoutez un bijou avec son prix. Liste vide = rien n'est affiché.",
+       "fields": [
+        {
+         "label": "Nom du bijou",
+         "name": "nom",
+         "widget": "string"
+        },
+        {
+         "label": "Prix",
+         "name": "prix",
+         "widget": "string",
+         "required": false,
+         "hint": "ex. 15€ ou « dès 12€ »"
+        }
+       ]
+      },
+      {
+       "label": "Bijoux visage",
+       "name": "visage",
+       "widget": "list",
+       "required": false,
+       "summary": "{{fields.nom}} — {{fields.prix}}",
+       "hint": "Ajoutez un bijou avec son prix. Liste vide = rien n'est affiché.",
+       "fields": [
+        {
+         "label": "Nom du bijou",
+         "name": "nom",
+         "widget": "string"
+        },
+        {
+         "label": "Prix",
+         "name": "prix",
+         "widget": "string",
+         "required": false,
+         "hint": "ex. 15€ ou « dès 12€ »"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "textes",
+     "label": "Tattoo — Textes & prix",
+     "file": "content/tattoo-textes.json",
+     "fields": [
+      {
+       "label": "Piercing — Tarifs",
+       "name": "g05",
+       "widget": "object",
+       "collapsed": false,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · — 02 · Piercing",
+         "name": "tt042",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Le piercing, posément",
+         "name": "tt043",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Piercing oreille, visage et corps à Goyave, bijoux en titane inclus d…",
+         "name": "tt044",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Titre · Visage & Oreille",
+         "name": "tt045",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Lobe, nez, septum, arcade, lèvres, langue… Un style unique pour chaqu…",
+         "name": "tt046",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Tarif · Lobe",
+         "name": "tt047",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Double lobe",
+         "name": "tt047b",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Hélix",
+         "name": "tt047c",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Tragus",
+         "name": "tt047d",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Conch",
+         "name": "tt047e",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Daith",
+         "name": "tt047f",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Rook",
+         "name": "tt047g",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Industriel",
+         "name": "tt047h",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Nez",
+         "name": "tt048",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Septum",
+         "name": "tt049",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Bridge",
+         "name": "tt050",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Arcade",
+         "name": "tt051",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Labret · Medusa · Monroe",
+         "name": "tt052",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Smiley",
+         "name": "tt053",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Langue",
+         "name": "tt054",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Snake eyes",
+         "name": "tt055",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Titre · Corps",
+         "name": "tt056",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Nombril, surface, tétons, christina — exprimez votre style jusqu'au m…",
+         "name": "tt057",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Tarif · Nombril",
+         "name": "tt058",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Surface",
+         "name": "tt059",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Téton",
+         "name": "tt060",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Tétons (les 2)",
+         "name": "tt061",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Tarif · Christina",
+         "name": "tt062",
+         "widget": "string",
+         "required": false,
+         "hint": "Format : Nom <span class=\"price\">00€</span> — changez seulement le chiffre."
+        },
+        {
+         "label": "Texte · Nos bijoux · Titane",
+         "name": "tt063",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Pourquoi le titane ?",
+         "name": "tt064",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Tous nos bijoux de pose sont en titane implantable, le même métal que…",
+         "name": "tt065",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Titre · Sans nickel",
+         "name": "tt066",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Le nickel est la première cause d'allergie aux bijoux. Le titane n'en…",
+         "name": "tt067",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Titre · Biocompatible",
+         "name": "tt068",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Le corps le tolère très bien. Il limite les irritations, les rougeurs…",
+         "name": "tt069",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Titre · Résistant",
+         "name": "tt070",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Il ne rouille pas et ne s'oxyde pas, même au contact de la sueur, de …",
+         "name": "tt071",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Titre · Léger",
+         "name": "tt072",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Presque deux fois plus léger que l'acier : le bijou se fait oublier e…",
+         "name": "tt073",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Hero",
+       "name": "g01",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · Une encre, un geste, une histoire.",
+         "name": "tt001",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · La Goutte d'Encre, salon de tatouage et piercing en Guadeloupe. Du fi…",
+         "name": "tt002",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "L'atelier",
+       "name": "g02",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · — L'atelier",
+         "name": "tt003",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Une équipe, une même écoute",
+         "name": "tt004",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Un salon de tatouage à Goyave, ouvert en 2024, né d'un appren…",
+         "name": "tt005",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · La Goutte d'Encre a ouvert ses portes en 2024, après un appre…",
+         "name": "tt006",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · Aujourd'hui, nous sommes deux tatoueurs au salon. À l'écoute, patient…",
+         "name": "tt007",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · Ici, l'ambiance est détendue mais le travail reste sérieux : matériel…",
+         "name": "tt008",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Tattoo",
+       "name": "g03",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · — 01 · Tattoo",
+         "name": "tt009",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Le tatouage, au plus juste",
+         "name": "tt010",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Réalisme, fine line, chicano, géométrique, animé, fleurs ou paysages …",
+         "name": "tt011",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Titre · Fine Line",
+         "name": "tt012",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Tatouage fine line en Guadeloupe : traits délicats, fleurs, écritures…",
+         "name": "tt013",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Prix · Pièce moyenne (5–15cm) à partir de 100€ Composition florale sur devis …",
+         "name": "tt014",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Sortie d'aiguille (&lt; 5cm) 70€",
+         "name": "tt015",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Composition florale sur devis",
+         "name": "tt016",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Composition florale sur devis",
+         "name": "tt017",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Réalisme & Illustratif",
+         "name": "tt018",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Réalisme, mandala, animaux exotiques, mer, animé : des pièces contras…",
+         "name": "tt019",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · Pièce moyenne (10–20cm) à partir de 250€",
+         "name": "tt020",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Demi-bras / dos partiel à partir de 450€",
+         "name": "tt021",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Manchette complète sur devis",
+         "name": "tt022",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Cover-up consultation incluse",
+         "name": "tt023",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Paiement en plusieurs fois",
+         "name": "tt024",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Étalez le règlement de votre tatouage sur 2, 3 ou 4 fois sans frais. …",
+         "name": "tt025",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · Acompte — un acompte est demandé à la validation du projet pour réser…",
+         "name": "tt026",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Soins",
+       "name": "g04",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · — Soins · Après tatouage",
+         "name": "tt027",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Bien cicatriser, bien garder",
+         "name": "tt028",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Un beau tatouage se joue aussi après la séance. Les bons gestes des p…",
+         "name": "tt029",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Titre · Les premières heures",
+         "name": "tt030",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Gardez le film protecteur le temps indiqué en séance, puis retirez-le…",
+         "name": "tt031",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Titre · Nettoyer en douceur",
+         "name": "tt032",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Lavez 2 à 3 fois par jour à l'eau tiède et au savon doux, sans frotte…",
+         "name": "tt033",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Titre · Hydrater",
+         "name": "tt034",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Appliquez une fine couche de crème cicatrisante après chaque nettoyag…",
+         "name": "tt035",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Titre · Protéger",
+         "name": "tt036",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Pas de mer, de piscine ni de soleil direct pendant 3 semaines. Ne gra…",
+         "name": "tt037",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · En vente au salon",
+         "name": "tt038",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Crèmes & kits de soins",
+         "name": "tt039",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Crèmes cicatrisantes, savons doux et kits complets pour accompagner l…",
+         "name": "tt040",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · Retrait en boutique uniquement — pas de livraison.",
+         "name": "tt041",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Soins piercing",
+       "name": "g06",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · Fiche soin · Piercing",
+         "name": "tt074",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Les bons réflexes pour une belle cicatrisation",
+         "name": "tt075",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Nettoyage 2 fois par jour",
+         "name": "tt076",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Lavez-vous bien les mains avant chaque soin.",
+         "name": "tt077",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Nettoyez la zone avec du sérum physiologique ou une solution saline s…",
+         "name": "tt078",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Utilisez une compresse propre ou un coton-tige, sans alcool ni produi…",
+         "name": "tt079",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Laissez agir quelques secondes, puis séchez délicatement avec une com…",
+         "name": "tt080",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Les gestes à éviter pendant toute la cicatrisation",
+         "name": "tt081",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Ne pas toucher, tourner ou jouer avec le bijou.",
+         "name": "tt082",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Ne pas changer le bijou avant la fin de la cicatrisation.",
+         "name": "tt083",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Éviter piscines, bains, hammams et eaux naturelles (mer, lac, rivière).",
+         "name": "tt084",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Ne pas appliquer de maquillage, parfum ou crème sur la zone percée.",
+         "name": "tt085",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Au quotidien prenez soin de vous",
+         "name": "tt086",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Évitez les vêtements trop serrés ou qui frottent.",
+         "name": "tt087",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Dormez si possible sur le côté opposé au piercing.",
+         "name": "tt088",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Gardez la zone propre et sèche.",
+         "name": "tt089",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Adoptez une bonne hygiène de vie : alimentation, hydratation, sommeil.",
+         "name": "tt090",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Temps de cicatrisation à titre indicatif",
+         "name": "tt091",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Lobe d'oreille6 à 8 semaines",
+         "name": "tt092",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Hélix3 à 6 mois",
+         "name": "tt093",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Tragus3 à 6 mois",
+         "name": "tt094",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Labret / Monroe2 à 3 mois",
+         "name": "tt095",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Septum2 à 3 mois",
+         "name": "tt096",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Langue4 à 8 semaines",
+         "name": "tt097",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Nombril6 à 12 mois",
+         "name": "tt098",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Surface6 à 12 mois",
+         "name": "tt099",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Ces durées peuvent varier selon les personnes et les soins apportés.",
+         "name": "tt100",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · En cas de doute ou de problème — n'hésitez pas à nous contacter, nous…",
+         "name": "tt101",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Boutique bijoux",
+       "name": "g07",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · — Boutique · Bijoux",
+         "name": "tt102",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Les bijoux, en boutique",
+         "name": "tt103",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Bijoux de piercing en vente à l'atelier de Goyave : oreille, nombril,…",
+         "name": "tt104",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · Retrait en boutique uniquement — pas de livraison. Réservez par télép…",
+         "name": "tt105",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Titre · Oreille",
+         "name": "tt106",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Clous, anneaux et pendants pour l'oreille — du plus discret au plus t…",
+         "name": "tt107",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Nombril",
+         "name": "tt112",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Bananes et pendants pour piercing au nombril, en plusieurs longueurs.",
+         "name": "tt113",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Labret",
+         "name": "tt117",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Labrets à visser ou push-pin, pour lèvre, tragus ou hélix.",
+         "name": "tt118",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Visage",
+         "name": "tt122",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Anneaux et clous pour nez, septum, arcade, bridge et langue.",
+         "name": "tt123",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Galerie",
+       "name": "g08",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · — 03 · Portfolio",
+         "name": "tt128",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Pièces récentes",
+         "name": "tt129",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Photos et vidéos de tatouages réalisés à l'atelier de Goyave : réalis…",
+         "name": "tt130",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Avis",
+       "name": "g09",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · — 04 · Avis clients",
+         "name": "tt131",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Des retours, en confiance",
+         "name": "tt132",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Voici ce que disent celles et ceux qui sont passés par l'atelier.",
+         "name": "tt133",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · \"Premier tatouage et déjà l'envie d'en refaire un. L'atelier est minu…",
+         "name": "tt134",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · \"Helix + tragus posés sans douleur, et un suivi par message vraiment …",
+         "name": "tt135",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · \"Un demi-bras réalisme pensé pendant trois semaines avant la séance. …",
+         "name": "tt136",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Booking",
+       "name": "g10",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · Prendre rendez-vous",
+         "name": "tt137",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Un projet de tatouage ou de piercing en Guadeloupe ? Décrivez-le en q…",
+         "name": "tt138",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Bas de page",
+       "name": "g11",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · La Goutte d'Encre",
+         "name": "tt139",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Studio tattoo & piercing — atelier confidentiel sur rendez-vous, en G…",
+         "name": "tt140",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · L'atelier",
+         "name": "tt141",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Tattoo",
+         "name": "tt142",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Piercing",
+         "name": "tt143",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Bijoux",
+         "name": "tt144",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Soins",
+         "name": "tt145",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Galerie",
+         "name": "tt146",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Avis",
+         "name": "tt147",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Studio Visuals",
+         "name": "tt148",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Photo & vidéo",
+         "name": "tt149",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Mariages",
+         "name": "tt150",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Showreel",
+         "name": "tt151",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Demander un devis",
+         "name": "tt152",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Contact",
+         "name": "tt153",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Goyave, Guadeloupe",
+         "name": "tt154",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · lagouttedencre04@gmail.com",
+         "name": "tt155",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · +590 690 54 56 41",
+         "name": "tt156",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · +590 691 28 51 13",
+         "name": "tt157",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · une maison, deux mains",
+         "name": "tt158",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "visuals",
+   "label": "Visuals",
+   "files": [
+    {
+     "name": "medias",
+     "label": "Visuals — Photos & vidéos",
+     "file": "content/visuals-medias.json",
+     "fields": [
+      {
+       "label": "Vidéo de présentation (haut de page)",
+       "name": "hero-video",
+       "widget": "file",
+       "required": false,
+       "hint": "Vidéo mp4 de quelques minutes, idéalement moins de 50 Mo. Lecture avec le son et les commandes."
+      },
+      {
+       "label": "Showreel 2026",
+       "name": "showreel",
+       "widget": "file",
+       "required": false,
+       "hint": "Vidéo (mp4)"
+      },
+      {
+       "label": "Vidéo de présentation — Mariage",
+       "name": "pack-mariage",
+       "widget": "file",
+       "required": false,
+       "hint": "Vidéo mp4 de quelques minutes, affichée en haut de l'offre. Lecture avec le son et les commandes."
+      },
+      {
+       "label": "Vidéo de présentation — Baptême",
+       "name": "pack-bapteme",
+       "widget": "file",
+       "required": false,
+       "hint": "Vidéo mp4 de quelques minutes, affichée en haut de l'offre. Lecture avec le son et les commandes."
+      },
+      {
+       "label": "Vidéo de présentation — Anniversaire",
+       "name": "pack-anniversaire",
+       "widget": "file",
+       "required": false,
+       "hint": "Vidéo mp4 de quelques minutes, affichée en haut de l'offre. Lecture avec le son et les commandes."
+      },
+      {
+       "label": "Vidéo de présentation — Baby Shower",
+       "name": "pack-babyshower",
+       "widget": "file",
+       "required": false,
+       "hint": "Vidéo mp4 de quelques minutes, affichée en haut de l'offre. Lecture avec le son et les commandes."
+      },
+      {
+       "label": "Vidéo de présentation — Gender Reveal",
+       "name": "pack-gender",
+       "widget": "file",
+       "required": false,
+       "hint": "Vidéo mp4 de quelques minutes, affichée en haut de l'offre. Lecture avec le son et les commandes."
+      },
+      {
+       "label": "Vidéo de présentation — Moto & Sport Auto",
+       "name": "pack-moto",
+       "widget": "file",
+       "required": false,
+       "hint": "Vidéo mp4 de quelques minutes, affichée en haut de l'offre. Lecture avec le son et les commandes."
+      },
+      {
+       "label": "Vidéo de présentation — Immobilier",
+       "name": "pack-immobilier",
+       "widget": "file",
+       "required": false,
+       "hint": "Vidéo mp4 de quelques minutes, affichée en haut de l'offre. Lecture avec le son et les commandes."
+      },
+      {
+       "label": "Vidéo de présentation — Culinaire",
+       "name": "pack-culinaire",
+       "widget": "file",
+       "required": false,
+       "hint": "Vidéo mp4 de quelques minutes, affichée en haut de l'offre. Lecture avec le son et les commandes."
+      }
+     ]
+    },
+    {
+     "name": "textes",
+     "label": "Visuals — Textes & prix",
+     "file": "content/visuals-textes.json",
+     "fields": [
+      {
+       "label": "Hero",
+       "name": "g01",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · Capturer ce qui ne se rejoue pas.",
+         "name": "vs001",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vidéaste et photographe en Guadeloupe : mariages, baptêmes, anniversa…",
+         "name": "vs002",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Catégories",
+       "name": "g02",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · — 01 · Prestations",
+         "name": "vs003",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Huit terrains, une signature",
+         "name": "vs004",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vidéo de mariage, événements familiaux, moto & sport auto, immobilier…",
+         "name": "vs005",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · Mariage",
+         "name": "vs006",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · du oui aux étoiles, votre histoire filmée",
+         "name": "vs007",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Mariage",
+         "name": "vs008",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Baptême",
+         "name": "vs009",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · cérémonie, famille, premières mémoires",
+         "name": "vs010",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Baptême",
+         "name": "vs011",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Anniversaire",
+         "name": "vs012",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · l'événement, sans figer la fête",
+         "name": "vs013",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Anniversaire",
+         "name": "vs014",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Baby Shower",
+         "name": "vs015",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · l'attente, l'instant suspendu",
+         "name": "vs016",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Baby Shower",
+         "name": "vs017",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Gender Reveal",
+         "name": "vs018",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · la surprise filmée, l'émotion préservée",
+         "name": "vs019",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Gender Reveal",
+         "name": "vs020",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Moto & Sport Auto",
+         "name": "vs021",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · vitesse, piste, multi-cam embarquée",
+         "name": "vs022",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Moto & Sport Auto",
+         "name": "vs023",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Immobilier",
+         "name": "vs024",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · vidéos qui font la différence à la vente",
+         "name": "vs025",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Immobilier",
+         "name": "vs026",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Culinaire",
+         "name": "vs027",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · restaurant, chef, contenu food réseaux",
+         "name": "vs028",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Culinaire",
+         "name": "vs029",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Showreel",
+       "name": "g03",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · — 02 · Showreel 2026",
+         "name": "vs030",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Une année, en images",
+         "name": "vs031",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Les plus beaux moments filmés en Guadeloupe cette année : mariages, m…",
+         "name": "vs032",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · 62+",
+         "name": "vs033",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Mariages couverts",
+         "name": "vs034",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 140k",
+         "name": "vs035",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vues cumulées",
+         "name": "vs036",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 21j",
+         "name": "vs037",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Délai de livraison",
+         "name": "vs038",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 4K",
+         "name": "vs039",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Sony FX · cinéma",
+         "name": "vs040",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Offres",
+       "name": "g04",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · — 03 · Nos Offres",
+         "name": "vs041",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Des packs clairs, des tarifs honnêtes",
+         "name": "vs042",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Tarifs vidéo et photo en Guadeloupe : choisissez votre univers ci-des…",
+         "name": "vs043",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Offres · Mariage",
+       "name": "g05",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · Des souvenirs qui traversent le temps.",
+         "name": "vs044",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vidéaste mariage en Guadeloupe, je capture chaque regard, chaque émot…",
+         "name": "vs045",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Prix · l'essentiel cinematic",
+         "name": "vs046",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · à partir de800€",
+         "name": "vs047",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Présence 4 à 6h",
+         "name": "vs048",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Cérémonie + moments clés",
+         "name": "vs049",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film court (3 à 5 min)",
+         "name": "vs050",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Images cinematic",
+         "name": "vs051",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · la journée racontée",
+         "name": "vs052",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · à partir de1 300€",
+         "name": "vs053",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Présence 8 à 10h (préparatifs → soirée)",
+         "name": "vs054",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film principal (5 à 8 min)",
+         "name": "vs055",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 1 teaser (reel réseaux)",
+         "name": "vs056",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Drone (si autorisé)",
+         "name": "vs057",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Audio vœux / discours",
+         "name": "vs058",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · tout, sans compromis",
+         "name": "vs059",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · à partir de2 000€",
+         "name": "vs060",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Journée complète",
+         "name": "vs061",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film long (10 à 15 min)",
+         "name": "vs062",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Teaser + plusieurs reels",
+         "name": "vs063",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Multi-cam (GoPro / angles)",
+         "name": "vs064",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Sound design + storytelling",
+         "name": "vs065",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Offres · Bapteme",
+       "name": "g06",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · Une cérémonie, une mémoire.",
+         "name": "vs066",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Pour préserver la douceur de la cérémonie et les liens familiaux. Une…",
+         "name": "vs067",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Prix · la cérémonie essentielle",
+         "name": "vs068",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · à partir de300€",
+         "name": "vs069",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Cérémonie",
+         "name": "vs070",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film court (2 à 3 min)",
+         "name": "vs071",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Images clés",
+         "name": "vs072",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · cérémonie + réception",
+         "name": "vs073",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · à partir de500€",
+         "name": "vs074",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Cérémonie + réception",
+         "name": "vs075",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film (3 à 5 min)",
+         "name": "vs076",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Images famille / moments clés",
+         "name": "vs077",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · demi-journée cinematic",
+         "name": "vs078",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · à partir de800€",
+         "name": "vs079",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Demi-journée complète",
+         "name": "vs080",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film + teaser",
+         "name": "vs081",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Plans cinematic + détails",
+         "name": "vs082",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Offres · Anniversaire",
+       "name": "g07",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · Des émotions à vécues, et revécues.",
+         "name": "vs083",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Je capture chaque sourire, chaque émotion et chaque détail avec discr…",
+         "name": "vs084",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Prix · la soirée résumée",
+         "name": "vs085",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Présence 2 à 3h",
+         "name": "vs086",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film court (2 à 3 min)",
+         "name": "vs087",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Moments clés de la soirée",
+         "name": "vs088",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · l'ambiance préservée",
+         "name": "vs089",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Présence 4 à 6h",
+         "name": "vs090",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film (3 à 5 min)",
+         "name": "vs091",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Teaser pour les réseaux sociaux",
+         "name": "vs092",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Moments forts + ambiance",
+         "name": "vs093",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · la fête racontée",
+         "name": "vs094",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Présence 6 à 8h",
+         "name": "vs095",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film (5 à 7 min)",
+         "name": "vs096",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Teaser + plusieurs reels",
+         "name": "vs097",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Clips des invités / messages",
+         "name": "vs098",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Captation des surprises & animations",
+         "name": "vs099",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Offres · Babyshower",
+       "name": "g08",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · Avant l'arrivée, l'instant suspendu.",
+         "name": "vs100",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Pour célébrer l'attente et la famille — captation tout en douceur, de…",
+         "name": "vs101",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Prix · l'événement résumé",
+         "name": "vs102",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Présence 2 à 3h",
+         "name": "vs103",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film court (2 à 3 min)",
+         "name": "vs104",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Moments clés de l'événement",
+         "name": "vs105",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · déco, jeux, ambiance",
+         "name": "vs106",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Présence 4 à 6h",
+         "name": "vs107",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film (3 à 5 min)",
+         "name": "vs108",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Teaser pour les réseaux sociaux",
+         "name": "vs109",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Détails déco, jeux & ambiance",
+         "name": "vs110",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · la journée complète",
+         "name": "vs111",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Présence 6 à 8h",
+         "name": "vs112",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film (5 à 7 min)",
+         "name": "vs113",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Teaser + plusieurs reels",
+         "name": "vs114",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Interviews / messages",
+         "name": "vs115",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Détails + montage soigné",
+         "name": "vs116",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Offres · Gender",
+       "name": "g09",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · La surprise filmée, l'émotion préservée.",
+         "name": "vs117",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · L'instant décisif capté en multi-cam pour qu'aucune réaction ne s'éch…",
+         "name": "vs118",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Prix · le moment clé",
+         "name": "vs119",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Présence 2 à 3h",
+         "name": "vs120",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film court (2 à 3 min)",
+         "name": "vs121",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Captation du moment clé",
+         "name": "vs122",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · réactions + moments forts",
+         "name": "vs123",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Présence 4 à 6h",
+         "name": "vs124",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film (3 à 5 min)",
+         "name": "vs125",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Teaser pour les réseaux sociaux",
+         "name": "vs126",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Réactions + moments forts",
+         "name": "vs127",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · multi-cam & angles",
+         "name": "vs128",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Présence 6 à 8h",
+         "name": "vs129",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Film (5 à 7 min)",
+         "name": "vs130",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Teaser + plusieurs reels",
+         "name": "vs131",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Multi-cam (GoPro / angles)",
+         "name": "vs132",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Captation des surprises & animations",
+         "name": "vs133",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Offres · Moto",
+       "name": "g10",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · Des images qui racontent votre passion.",
+         "name": "vs134",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Spécialisé dans la vidéo moto & sport auto, je capture l'intensité, l…",
+         "name": "vs135",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Prix · 1 reel express",
+         "name": "vs136",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 1 reel (30-60 sec)",
+         "name": "vs137",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Images drone + 1 angle GoPro",
+         "name": "vs138",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · vidéo + reel",
+         "name": "vs139",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 1 reel + vidéo 1-2 min",
+         "name": "vs140",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 2 angles GoPro + drone",
+         "name": "vs141",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · demi-journée suivie",
+         "name": "vs142",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Suivi demi-journée",
+         "name": "vs143",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Plusieurs vidéos + drone",
+         "name": "vs144",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · clip / promo véhicule",
+         "name": "vs145",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Clip court (reel)",
+         "name": "vs146",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vidéo promo 1-3 min",
+         "name": "vs147",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Shoot premium",
+         "name": "vs148",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · auto / moto",
+         "name": "vs149",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Aftermovie simple",
+         "name": "vs150",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Aftermovie dynamique",
+         "name": "vs151",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Couverture complète",
+         "name": "vs152",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · reels formats courts",
+         "name": "vs153",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 1 reel",
+         "name": "vs154",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Pack 3 reels",
+         "name": "vs155",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Pack 5 à 10 reels",
+         "name": "vs156",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · demi ou full day",
+         "name": "vs157",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Demi-journée captation",
+         "name": "vs158",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Demi-journée + montage",
+         "name": "vs159",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Journée complète",
+         "name": "vs160",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Offres · Immobilier",
+       "name": "g11",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · Des vidéos qui font la différence.",
+         "name": "vs161",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Spécialisé dans la vidéo immobilière, je crée des contenus profession…",
+         "name": "vs162",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Prix · le nécessaire",
+         "name": "vs163",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vidéo courte (30-60 sec)",
+         "name": "vs164",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Plans intérieurs + extérieurs",
+         "name": "vs165",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Montage dynamique",
+         "name": "vs166",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Idéal annonce rapide",
+         "name": "vs167",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · la mise en valeur",
+         "name": "vs168",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vidéo (1 à 2 min)",
+         "name": "vs169",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Plans détaillés & ambiance",
+         "name": "vs170",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Mise en valeur de la lumière",
+         "name": "vs171",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Musique libre de droits",
+         "name": "vs172",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · l'expérience",
+         "name": "vs173",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vidéo cinematic (1 à 2 min)",
+         "name": "vs174",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Storytelling du bien",
+         "name": "vs175",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Drone (extérieur inclus)",
+         "name": "vs176",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Colorimétrie professionnelle",
+         "name": "vs177",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · le prestige",
+         "name": "vs178",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vidéo cinéma (2 à 3 min)",
+         "name": "vs179",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Drone + plans aériens",
+         "name": "vs180",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Mise en scène + lifestyle",
+         "name": "vs181",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Livraison multi-formats",
+         "name": "vs182",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · location saisonnière",
+         "name": "vs183",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vidéo courte attractive",
+         "name": "vs184",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Mise en avant des atouts",
+         "name": "vs185",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Optimisé plateformes",
+         "name": "vs186",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · + de réservations garanties",
+         "name": "vs187",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · HDR + retouches",
+         "name": "vs188",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Photos professionnelles HDR",
+         "name": "vs189",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Retouches incluses",
+         "name": "vs190",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Intérieurs & extérieurs",
+         "name": "vs191",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Idéal pour annonces",
+         "name": "vs192",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vidéo de présentation",
+         "name": "vs193",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Valorisation du projet",
+         "name": "vs194",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Plans drone + storytelling",
+         "name": "vs195",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Attire investisseurs & clients",
+         "name": "vs196",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Insta, TikTok, Shorts",
+         "name": "vs197",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Format court percutant",
+         "name": "vs198",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Idéal Instagram & TikTok",
+         "name": "vs199",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Facebook & YouTube Shorts",
+         "name": "vs200",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Booster votre visibilité",
+         "name": "vs201",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Offres · Culinaire",
+       "name": "g12",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · Des images qui donnent faim.",
+         "name": "vs202",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Spécialisé dans la vidéo culinaire, je capture chaque texture, chaque…",
+         "name": "vs203",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Prix · 1 reel",
+         "name": "vs204",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 1 reel (15-30 sec)",
+         "name": "vs205",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Plans cuisine + dressage",
+         "name": "vs206",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · 3 reels",
+         "name": "vs207",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 3 reels (formats courts)",
+         "name": "vs208",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Différents plats / angles",
+         "name": "vs209",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · 5 à 10 reels",
+         "name": "vs210",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 5 à 10 reels",
+         "name": "vs211",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Tournage optimisé sur service",
+         "name": "vs212",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · 1 vidéo ambiance + cuisine",
+         "name": "vs213",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 1 vidéo (1 à 2 min)",
+         "name": "vs214",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Ambiance + cuisine + détails",
+         "name": "vs215",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · image de marque",
+         "name": "vs216",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Mise en scène + storytelling",
+         "name": "vs217",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Drone (extérieur si possible)",
+         "name": "vs218",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Sound design + étalonnage poussé",
+         "name": "vs219",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · YouTube / Instagram",
+         "name": "vs220",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Format YouTube / Insta",
+         "name": "vs221",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Étapes + plans détaillés",
+         "name": "vs222",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · 3 à 5 vidéos",
+         "name": "vs223",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · 3 à 5 vidéos",
+         "name": "vs224",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Recettes complètes + astuces",
+         "name": "vs225",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · événement culinaire",
+         "name": "vs226",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Aftermovie court",
+         "name": "vs227",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Ambiance + moments clés",
+         "name": "vs228",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · événement complet",
+         "name": "vs229",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Soirée / événement complet",
+         "name": "vs230",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Vidéo + contenu réseaux",
+         "name": "vs231",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Options",
+       "name": "g13",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · — 04 · Options & Suppléments",
+         "name": "vs232",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Tout ce qui peut s'ajouter",
+         "name": "vs233",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Drone",
+         "name": "vs234",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Livraison express",
+         "name": "vs235",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Vidéo longue supp.",
+         "name": "vs236",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Clé USB / coffret",
+         "name": "vs237",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Voix off",
+         "name": "vs238",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Photos suppl.",
+         "name": "vs239",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Prix · Tournage longue durée",
+         "name": "vs240",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Paiement en plusieurs fois",
+         "name": "vs241",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Étalez le règlement de votre prestation sur 2, 3 ou 4 fois sans frais…",
+         "name": "vs242",
+         "widget": "text",
+         "required": false
+        },
+        {
+         "label": "Texte · Acompte — un acompte est demandé à la validation du projet pour réser…",
+         "name": "vs243",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Devis",
+       "name": "g14",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · Parlons de votre projet",
+         "name": "vs244",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Un mariage, un événement ou un tournage en Guadeloupe ? Trois lignes …",
+         "name": "vs245",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Bas de page",
+       "name": "g15",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Titre · La Goutte d'Encre",
+         "name": "vs246",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Studio photo & vidéo — une lumière chaude, un cadre soigné, en Guadel…",
+         "name": "vs247",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Le studio",
+         "name": "vs248",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Prestations",
+         "name": "vs249",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Offres & tarifs",
+         "name": "vs250",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Showreel",
+         "name": "vs251",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Devis",
+         "name": "vs252",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Atelier Tattoo",
+         "name": "vs253",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Tattoo & Piercing",
+         "name": "vs254",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Galerie",
+         "name": "vs255",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Avis clients",
+         "name": "vs256",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Prendre RDV",
+         "name": "vs257",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Contact",
+         "name": "vs258",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Goyave · Guadeloupe",
+         "name": "vs259",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · lagouttedencre04@gmail.com",
+         "name": "vs260",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · +590 690 54 56 41",
+         "name": "vs261",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · +590 691 28 51 13",
+         "name": "vs262",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · une maison, deux mains",
+         "name": "vs263",
+         "widget": "string",
+         "required": false
+        }
+       ]
+      },
+      {
+       "label": "Avis clients",
+       "name": "gavis",
+       "widget": "object",
+       "collapsed": true,
+       "required": false,
+       "fields": [
+        {
+         "label": "Texte · Sur-titre",
+         "name": "vsav1",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Titre · Vos retours, notre fierté",
+         "name": "vsav2",
+         "widget": "string",
+         "required": false
+        },
+        {
+         "label": "Texte · Remerciement",
+         "name": "vsav3",
+         "widget": "text",
+         "required": false
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
