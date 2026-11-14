@@ -1,62 +1,66 @@
 {
- "fineline": {
-  "couverture": "",
-  "titre": "Fine line",
-  "sous_titre": "",
-  "pieces": []
- },
- "blackwork": {
-  "couverture": "",
-  "titre": "Réalisme",
-  "sous_titre": "",
-  "pieces": []
- },
- "floral": {
-  "couverture": "",
-  "titre": "Floral",
-  "sous_titre": "",
-  "pieces": []
- },
- "lettrage": {
-  "couverture": "",
-  "titre": "Lettrage",
-  "sous_titre": "",
-  "pieces": []
- },
- "anime": {
-  "couverture": "",
-  "titre": "Animé",
-  "sous_titre": "",
-  "pieces": []
- },
- "mer": {
-  "couverture": "",
-  "titre": "Mer",
-  "sous_titre": "",
-  "pieces": []
- },
- "animaux": {
-  "couverture": "",
-  "titre": "Animaux",
-  "sous_titre": "",
-  "pieces": []
- },
- "geometrique": {
-  "couverture": "",
-  "titre": "Géométrique",
-  "sous_titre": "",
-  "pieces": []
- },
- "autre": {
-  "couverture": "",
-  "titre": "Autre",
-  "sous_titre": "",
-  "pieces": []
- },
- "piercing": {
-  "couverture": "",
-  "titre": "Piercing",
-  "sous_titre": "",
-  "pieces": []
- }
+  "piercing": {
+    "couverture": "",
+    "titre": "Piercing",
+    "sous_titre": "",
+    "pieces": []
+  },
+  "lettrage": {
+    "couverture": "",
+    "titre": "Lettrage",
+    "sous_titre": "",
+    "pieces": []
+  },
+  "fineline": {
+    "couverture": "",
+    "titre": "Fine line",
+    "sous_titre": "",
+    "pieces": []
+  },
+  "blackwork": {
+    "couverture": "",
+    "titre": "Réalisme",
+    "sous_titre": "",
+    "pieces": [
+      {
+        "media": "/uploads/img_8668.jpg"
+      }
+    ]
+  },
+  "autre": {
+    "couverture": "",
+    "titre": "Autre",
+    "sous_titre": "",
+    "pieces": []
+  },
+  "animaux": {
+    "couverture": "",
+    "titre": "Animaux",
+    "sous_titre": "",
+    "pieces": []
+  },
+  "anime": {
+    "couverture": "",
+    "titre": "Animé",
+    "sous_titre": "",
+    "pieces": []
+  },
+  "floral": {
+    "couverture": "",
+    "titre": "Floral",
+    "sous_titre": "",
+    "pieces": []
+  },
+  "mer": {
+    "couverture": "",
+    "titre": "Mer",
+    "sous_titre": "",
+    "pieces": []
+  },
+  "geometrique": {
+    "couverture": "",
+    "titre": "Géométrique",
+    "sous_titre": "",
+    "pieces": []
+  }
 }
