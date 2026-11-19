@@ -1,16 +1,4 @@
 {
-  "piercing": {
-    "couverture": "",
-    "titre": "Piercing",
-    "sous_titre": "",
-    "pieces": []
-  },
-  "lettrage": {
-    "couverture": "",
-    "titre": "Lettrage",
-    "sous_titre": "",
-    "pieces": []
-  },
   "fineline": {
     "couverture": "",
     "titre": "Fine line",
@@ -33,24 +21,6 @@
       }
     ]
   },
-  "autre": {
-    "couverture": "/uploads/img_8673.jpg",
-    "titre": "Autre",
-    "sous_titre": "",
-    "pieces": []
-  },
-  "animaux": {
-    "couverture": "",
-    "titre": "Petits Tattoo",
-    "sous_titre": "",
-    "pieces": []
-  },
-  "anime": {
-    "couverture": "",
-    "titre": "Animé",
-    "sous_titre": "",
-    "pieces": []
-  },
   "floral": {
     "couverture": "",
     "titre": "Floral",
@@ -63,6 +33,18 @@
         "media": "/uploads/capture-d’écran-2026-11-14-à-19.03.53.png"
       }
     ]
+  },
+  "lettrage": {
+    "couverture": "",
+    "titre": "Lettrage",
+    "sous_titre": "",
+    "pieces": []
+  },
+  "anime": {
+    "couverture": "",
+    "titre": "Animé",
+    "sous_titre": "",
+    "pieces": []
   },
   "mer": {
     "couverture": "",
@@ -77,9 +59,27 @@
       }
     ]
   },
+  "animaux": {
+    "couverture": "/uploads/img_0823.jpg",
+    "titre": "Petits Tattoo",
+    "sous_titre": "",
+    "pieces": []
+  },
   "geometrique": {
     "couverture": "",
     "titre": "Géométrique",
+    "sous_titre": "",
+    "pieces": []
+  },
+  "autre": {
+    "couverture": "/uploads/img_8673.jpg",
+    "titre": "Autre",
+    "sous_titre": "",
+    "pieces": []
+  },
+  "piercing": {
+    "couverture": "",
+    "titre": "Piercing",
     "sous_titre": "",
     "pieces": []
   }
